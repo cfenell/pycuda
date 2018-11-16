@@ -84,11 +84,11 @@ for size in sizes:
 
     ax=plt.subplot(221)
     ax.set(title="CUDA FFT")
-    plt.imshow(np.abs(gpu_fft).astype('uint8'),cmap='gray')
+    plt.imshow(np.abs(gpu_fft).astype('uint16'),cmap='gray')
 
     ax=plt.subplot(223)
     ax.set(title="CPU FFT")    
-    plt.imshow(np.abs(cpu_fft).astype('uint8'),cmap='gray')
+    plt.imshow(np.abs(cpu_fft).astype('uint16'),cmap='gray')
 
     ax=plt.subplot(224)
     ax.set(title="Difference relative to CPU FFT")
