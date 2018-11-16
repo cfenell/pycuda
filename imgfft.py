@@ -92,7 +92,7 @@ for size in sizes:
 
     ax=plt.subplot(224)
     ax.set(title="Difference relative to CPU FFT")
-    plt.imshow( (100.0*(np.abs(gpu_fft)/np.abs(cpu_fft) - 1.0)).astype('uint8'),cmap='plasma')
+    plt.imshow(100.0*(np.abs(gpu_fft)/np.abs(cpu_fft) - 1.0), cmap='plasma')
     plt.colorbar(label='%')
     
     # plt.show()
